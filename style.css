@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: all 0.8s;
+}
+nav{
+    width: 100%;
+    height: 78px;
+    box-shadow: 10px 10px 15px -8px gray;
+    display: flex;
+
+}
+nav>.leftnav{
+    width: 30%;
+    height: 100%;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+}
+nav>.rightnav{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightnav>ul{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.rightnav>.btn-box{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightnav>.btn-box>.login-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background:linear-gradient(to right, red,orange,yellow) ;
+    color:white ;
+    cursor: pointer;
+}
+
+#theme-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+   background-color: black;
+    color:white ;
+    cursor: pointer;
+}
+/* login page style starts here */
+
+.login-page{
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 10px gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.login-page>.close-btn{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 25px;
+}
+.login-page>.close-btn>.cls-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.login-box{
+    width: 80%;
+    height: 80%;
+    /* background-color: red; */
+    margin: auto;
+}
+.login-box>form{
+    width: 100%;
+    height: 100%;
+}
+.login-box>form>.input-box{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+/* background-color: yellow; */
+    justify-content: center;
+}
+.login-box>form>.input-box>input{
+    width: 70%;
+    height: 50%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(128, 128, 128, 0.314);
+    color: black;
+}
+::placeholder{
+    color: white;
+}
+.Submit-btn{
+    width:70%;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightblue;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.Submit-btn:hover{
+    background-color: royalblue;
+    color: white;
+}
+
+
+
+.date-time{
+    width: 200px;
+    height: 90px;
+    background-color: gainsboro;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    /* background-color: red; */
+}
+.card{
+    width: 20%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.425);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card>img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: auto;
+}
+.card>h3{
+    height: 25%;
+    width: 100%;
+    text-align: center;
+}
